@@ -1,10 +1,14 @@
 import React from 'react';
+import CardList from '../CardList/CardList'
 
-function Main(props) {
+function Main({clients}) {
+
   return (
-    <div className='main'>
-      Main
-    </div>
+    <>
+      <div className='main'>
+        <CardList clients={clients}/>
+      </div>
+    </>
   );
 }
 

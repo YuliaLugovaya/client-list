@@ -1,19 +1,17 @@
 import React from 'react';
-import M from 'materialize-css';
 
-function Header(props) {
-  document?.addEventListener('DOMContentLoaded', function () {
-    let elems = document.querySelectorAll('.sidenav');
-    let instances = M.Sidenav.init(elems);
-    console.log(instances);
-  })
+function Header({ addClients }) {
   return (
     <>
       <header>
-        <nav>
+        <nav className='nav-container'>
           <div className="nav-wrapper">
-            <h1 className='title'>Список клиентов</h1>
-            <button className="waves-effect waves-light btn">Показать больше</button>
+            <h1 className='title'>Client list</h1>
+            <button
+              className="waves-effect waves-light btn"
+              onClick={() => addClients()}>
+              Show more clients
+            </button>
           </div>
         </nav>
       </header>

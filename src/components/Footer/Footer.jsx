@@ -3,11 +3,15 @@ import React from 'react';
 function Footer(props) {
   return (
     <>
-      <footer class="page-footer">
-        <div class="footer-copyright">
-          <div class="container">
-            © 2023 Список клиентов
-            <a class="grey-text text-lighten-4 right" href="https://jsonplaceholder.typicode.com/">API</a>
+      <footer className="page-footer">
+        <div className="footer-copyright">
+          <div className="footer-container">
+            <span>© 2023 Client list</span>
+            <a className="grey-text text-lighten-4 right footer-link"
+              href="https://jsonplaceholder.typicode.com/"
+              target='blank'>
+              API JSONPlaceholder
+            </a>
           </div>
         </div>
       </footer>
